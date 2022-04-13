@@ -171,8 +171,7 @@
           1,
           1,
           1,
-          null,
-          null,
+          1,
           null,
           null,
           null
@@ -199,22 +198,16 @@
           null
         ]
       },
-      "/Users/karanmehta/4mod/Roots-Tea/spec/model/subscription_spec.rb": {
+      "/Users/karanmehta/4mod/Roots-Tea/app/models/tea.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
           null
         ]
       },
@@ -231,39 +224,51 @@
           null
         ]
       },
-      "/Users/karanmehta/4mod/Roots-Tea/spec/model/tea_spec.rb": {
+      "/Users/karanmehta/4mod/Roots-Tea/app/controllers/api/v1/subscriptions_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
           null,
           null
         ]
       },
-      "/Users/karanmehta/4mod/Roots-Tea/app/models/tea.rb": {
+      "/Users/karanmehta/4mod/Roots-Tea/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          1,
-          1,
+          null
+        ]
+      },
+      "/Users/karanmehta/4mod/Roots-Tea/app/serializers/subscription_serializer.rb": {
+        "lines": [
           1,
           1,
           null,
           1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1649806607
+    "timestamp": 1649810426
   }
 }

@@ -1,5 +1,4 @@
-# Roots-Tea
-![image](https://user-images.githubusercontent.com/79548116/163462417-db8da35a-6282-422e-a34c-33c6ba0dd233.png)
+# ![image](https://user-images.githubusercontent.com/79548116/163462417-db8da35a-6282-422e-a34c-33c6ba0dd233.png)
 
 <details open="open">
   <summary>Table of Contents</summary>

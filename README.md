@@ -58,7 +58,7 @@ All endpoints can be viewed by running the `rails server` command in your termin
 
 | Request Type  | URI           |  
 | ------------- | ------------- |
-| GET  |  /api/v1/forecast?location={location}  |
+| GET  |  /api/v1/customers/:id/subscriptions  |
 | POST | /api/v1/customers/:id/subscriptions |
 | PATCH | /api/v1/customers/:id/subscriptions/:id | 
 

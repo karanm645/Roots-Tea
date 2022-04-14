@@ -5,12 +5,12 @@ class SubscriptionSerializer
         "type": "subscriptions",
         "id": data.id,
         "attributes":{
-          "title": data.title,
-          "status": data.status,
-          "frequency": data.frequency,
+          "customer_id": data.customer_id,
           "tea_id": data.tea_id,
+          "title": data.title,
           "price": data.price,
-          "customer_id": data.customer_id
+          "status": data.status,
+          "frequency": data.frequency
         }
       }
     }

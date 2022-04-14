@@ -67,4 +67,55 @@ All endpoints can be viewed by running the `rails server` command in your termin
 | POST | /api/v1/customers/:id/subscriptions |
 | PATCH | /api/v1/customers/:id/subscriptions/:id | 
 
+Request: 
+```ruby 
+GET /api/v1/customers/:id/subscriptions
+``` 
 
+Response: 
+```ruby 
+[
+    {
+        "data": {
+            "type": "subscriptions",
+            "id": 1,
+            "attributes": {
+                "customer_id": 1,
+                "tea_id": 1,
+                "title": "Chai",
+                "price": 4,
+                "status": "active",
+                "frequency": 4
+            }
+        }
+    },
+    {
+        "data": {
+            "type": "subscriptions",
+            "id": 2,
+            "attributes": {
+                "customer_id": 1,
+                "tea_id": 1,
+                "title": "Green Tea",
+                "price": 4,
+                "status": "active",
+                "frequency": 4
+            }
+        }
+    },
+    {
+        "data": {
+            "type": "subscriptions",
+            "id": 3,
+            "attributes": {
+                "customer_id": 1,
+                "tea_id": 1,
+                "title": "Chai",
+                "price": 4,
+                "status": "active",
+                "frequency": 4
+            }
+        }
+    }
+]
+```

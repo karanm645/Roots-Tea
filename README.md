@@ -21,7 +21,9 @@
       <ul>
         <li><a href="#local-setup">Local Setup</a></li>
       </ul>
-    <li><a href="#endpoints">Endpoints</a></li>
+    <li><a href="#endpoints">Endpoints</a>
+      <li><a href="#overview">Overview</a></li>
+    </li>
   </ol>
 </details>
  
@@ -56,6 +58,7 @@ API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers)
 ## Endpoints 
 All endpoints can be viewed by running the `rails server` command in your terminal. In your browswer, type in `http://localhost:3000/{endpoint_get_request}`
 
+### Overview
 | Request Type  | URI           |  
 | ------------- | ------------- |
 | GET  |  /api/v1/customers/:id/subscriptions  |

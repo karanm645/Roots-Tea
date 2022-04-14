@@ -263,7 +263,7 @@
           null
         ]
       },
-      "/Users/karanmehta/4mod/Roots-Tea/spec/requests/api/v1/customers/customer_creation_request_spec.rb": {
+      "/Users/karanmehta/4mod/Roots-Tea/spec/requests/api/v1/customers/customer_subscription_spec.rb": {
         "lines": [
           1,
           null,
@@ -271,7 +271,6 @@
           1,
           1,
           1,
-          null,
           1,
           null,
           1,
@@ -282,7 +281,6 @@
           null,
           1,
           1,
-          null,
           1,
           1,
           1,
@@ -347,6 +345,20 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -354,16 +366,21 @@
         "lines": [
           1,
           1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          null,
           1,
           1,
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          null,
           null,
           1,
           1,
@@ -373,7 +390,7 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -389,7 +406,7 @@
           1,
           1,
           null,
-          2,
+          3,
           null,
           null,
           null,
@@ -431,6 +448,6 @@
         ]
       }
     },
-    "timestamp": 1649952403
+    "timestamp": 1649954581
   }
 }

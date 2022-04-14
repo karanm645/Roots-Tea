@@ -6,9 +6,14 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
 
   def update 
-    subscription = Subscription.find(params[:id])
-    subscription.update(status: "inactive")
-    render json: SubscriptionSerializer.subscription_details(subscription)
+    subscription = Subscription.find_by(id: params[:id])
+    if subscription == nil 
+      render json: {error: "Cannot Make Request"}, status: 404
+    else 
+      subscription.update(status: "inactive")
+      render json: SubscriptionSerializer.subscription_details(subscription)
+  
+    end 
   end 
 
   def index 

@@ -18,6 +18,9 @@
       <ul>
         <li><a href="#database-design">Database design</a></li>
       </ul>
+      <ul>
+        <li><a href="#local-setup">Local Setup</a></li>
+      </ul>
     <li><a href="#endpoints">Endpoints</a></li>
   </ol>
 </details>
@@ -26,19 +29,37 @@
 This is a back-end project to connect customers to a tea subscription service. The endpoints created will subscribe a customer, cancel a subscription, and show all subscriptions pertaining to the customer.
   
   
-## Learning Goals of Project 
+### Learning Goals of Project 
 As a takehome challenge, my goal is to create an API (time limit 8 hours) for front-end developers to consume.
 
-## Versions
+### Versions
 
 - Ruby 2.7.2
 
 - Rails 5.2.6
 
-## Important Gems
+### Important Gems
 Testing: [rspec-rails](https://github.com/rspec/rspec-rails), [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers), [simplecov](https://github.com/simplecov-ruby/simplecov)
  
 API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers)
 
-## Database Design
+### Database Design
 ![image](https://user-images.githubusercontent.com/79548116/163052324-f299fdb3-f3b1-4ace-98be-76bec1c941a9.png)
+
+### Local Setup
+
+1. Fork and Clone the repo
+2. Install gem packages: `bundle install`
+3. Setup the database: `rails db:create`
+4. Run migrations: ` rails db:migrate`
+
+## Endpoints 
+All endpoints can be viewed by running the `rails server` command in your terminal. In your browswer, type in `http://localhost:3000/{endpoint_get_request}`
+
+| Request Type  | URI           |  
+| ------------- | ------------- |
+| GET  |  /api/v1/forecast?location={location}  |
+| POST | /api/v1/customers/:id/subscriptions |
+| PATCH | /api/v1/customers/:id/subscriptions/:id | 
+
+

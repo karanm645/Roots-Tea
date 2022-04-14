@@ -123,6 +123,9 @@ Response:
 Request: 
 ```ruby 
 POST /api/v1/customers/:id/subscriptions
+
+body:
+
 {
     "title": "John Smith",
     "price": 15,

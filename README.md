@@ -22,7 +22,10 @@
         <li><a href="#local-setup">Local Setup</a></li>
       </ul>
     <li><a href="#endpoints">Endpoints</a>
+      <ul>
       <li><a href="#overview">Overview</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
  

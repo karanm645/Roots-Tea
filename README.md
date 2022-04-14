@@ -149,3 +149,40 @@ Response:
     }
 }
 ```
+Request: 
+```ruby 
+PATCH /api/v1/customers/:id/subscriptions/:id
+
+body:
+
+{
+    "title": "new",
+    "price": 5,
+    "status": "active",
+    "frequency": 2,
+    "customer_id": 1,
+    "tea_id": 1
+}
+```
+
+Response: 
+```ruby 
+{
+    "data": {
+        "type": "subscriptions",
+        "id": 1,
+        "attributes": {
+            "customer_id": 1,
+            "tea_id": 1,
+            "title": "Chai",
+            "price": 4,
+            "status": "inactive",
+            "frequency": 4
+        }
+    }
+}
+```
+
+## Running the tests
+
+Run `bundle exec rspec` to run the test suite

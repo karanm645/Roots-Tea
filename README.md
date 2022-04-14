@@ -95,7 +95,7 @@ Response:
             "id": 2,
             "attributes": {
                 "customer_id": 1,
-                "tea_id": 1,
+                "tea_id": 2,
                 "title": "Green Tea",
                 "price": 4,
                 "status": "active",
@@ -109,13 +109,43 @@ Response:
             "id": 3,
             "attributes": {
                 "customer_id": 1,
-                "tea_id": 1,
-                "title": "Chai",
+                "tea_id": 3,
+                "title": "Mocha",
                 "price": 4,
-                "status": "active",
+                "status": "inactive",
                 "frequency": 4
             }
         }
     }
 ]
+```
+Request: 
+```ruby 
+POST /api/v1/customers/:id/subscriptions
+{
+    "title": "John Smith",
+    "price": 15,
+    "status": "active",
+    "frequency": 2,
+    "customer_id": 1,
+    "tea_id": 1
+}
+``` 
+
+Response: 
+```ruby 
+{
+    "data": {
+        "type": "subscriptions",
+        "id": 4,
+        "attributes": {
+            "customer_id": 1,
+            "tea_id": 1,
+            "title": "John Smith",
+            "price": 15,
+            "status": "active",
+            "frequency": 2
+        }
+    }
+}
 ```

@@ -23,7 +23,6 @@
       </ul>
     <li><a href="#endpoints">Endpoints</a>
       <li><a href="#overview">Overview</a></li>
-    </li>
   </ol>
 </details>
  

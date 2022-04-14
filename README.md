@@ -56,6 +56,7 @@ API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers)
 2. Install gem packages: `bundle install`
 3. Setup the database: `rails db:create`
 4. Run migrations: ` rails db:migrate`
+5. Create seeds: ` rails db:seed`
 
 ## Endpoints 
 All endpoints can be viewed by running the `rails server` command in your terminal. In your browswer, type in `http://localhost:3000/{endpoint_get_request}`

@@ -73,6 +73,7 @@ All endpoints can be viewed by running the `rails server` command in your termin
 Request: 
 ```ruby 
 GET /api/v1/customers/:id/subscriptions
+* No body required
 ``` 
 
 Response: 
@@ -160,6 +161,7 @@ Response:
 Request: 
 ```ruby 
 PATCH /api/v1/customers/:id/subscriptions/:id
+* No body requred
 ```
 
 Response: 

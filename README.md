@@ -69,6 +69,7 @@ All endpoints can be viewed by running the `rails server` command in your termin
 | POST | /api/v1/customers/:id/subscriptions      | A new subscription can be created |              
 | PATCH | /api/v1/customers/:id/subscriptions/:id | A subscription can be cancelled  |               
 
+### Show all tea subscriptions the customer has signed up for
 Request: 
 ```ruby 
 GET /api/v1/customers/:id/subscriptions
@@ -121,6 +122,7 @@ Response:
     }
 ]
 ```
+### Create a new tea subscription for customer
 Request: 
 ```ruby 
 POST /api/v1/customers/:id/subscriptions
@@ -154,6 +156,7 @@ Response:
     }
 }
 ```
+### Unsubscribe the customer from the subscription
 Request: 
 ```ruby 
 PATCH /api/v1/customers/:id/subscriptions/:id

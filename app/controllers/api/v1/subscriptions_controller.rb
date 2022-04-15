@@ -2,7 +2,6 @@ class Api::V1::SubscriptionsController < ApplicationController
   def create
     subscription = Subscription.create(subscription_params)
     render json: SubscriptionSerializer.subscription_details(subscription), status: 201
-    # add sad path -- 404 error if bad request
   end
 
   def update 
@@ -10,9 +9,8 @@ class Api::V1::SubscriptionsController < ApplicationController
     if subscription == nil 
       render json: {error: "Cannot Make Request"}, status: 404
     else 
-      subscription.update(status: "inactive")
+      subscription.update(status: 1)
       render json: SubscriptionSerializer.subscription_details(subscription)
-  
     end 
   end 
 

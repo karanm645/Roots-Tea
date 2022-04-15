@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'customer creation' do
-  it 'creates customer' do 
+RSpec.describe 'subscription creation' do
+  it 'creates subscription' do 
     customer_1 = Customer.create!(first_name: "Karan", last_name: "Mehta", email: "mehtak@gmail.com", address: "2234 South Jefferson")
     tea_1 = Tea.create!(title: "Chai", description: "Milky!", temperature: 100, brew_time: 4)
     subscription_1 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_1.id}", title: "#{tea_1.title}", status: "active", frequency: "4", price: 4.5)

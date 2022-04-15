@@ -157,17 +157,6 @@ Response:
 Request: 
 ```ruby 
 PATCH /api/v1/customers/:id/subscriptions/:id
-
-body:
-
-{
-    "title": "new",
-    "price": 5,
-    "status": "active",
-    "frequency": 2,
-    "customer_id": 1,
-    "tea_id": 1
-}
 ```
 
 Response: 

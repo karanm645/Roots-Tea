@@ -64,7 +64,7 @@ All endpoints can be viewed by running the `rails server` command in your termin
 
 ### Overview
 | Request Type  | URI          |  Details |
-| ------------- | -------------   --------        
+| ------------- | ------------- |  --------  |      
 | GET  |  /api/v1/customers/:id/subscriptions     | All of the customer's subscriptions can be seen |
 | POST | /api/v1/customers/:id/subscriptions      | A new subscription can be created |              
 | PATCH | /api/v1/customers/:id/subscriptions/:id | A subscription can be cancelled  |               

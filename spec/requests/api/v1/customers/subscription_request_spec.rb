@@ -5,7 +5,7 @@ RSpec.describe 'subscriptions' do
     customer_1 = Customer.create!(first_name: "Karan", last_name: "Mehta", email: "mehtak@gmail.com", address: "2234 South Jefferson")
     tea_1 = Tea.create!(title: "Chai", description: "Milky!", temperature: 100, brew_time: 4)
 
-    subscription_1 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_1.id}", title: "#{tea_1.title}", status: "active", frequency: "4", price: 4.5)
+    subscription_1 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_1.id}", title: "#{tea_1.title}", status: 1, frequency: "4", price: 4.5)
 
     patch "/api/v1/customers/#{customer_1.id}/subscriptions/#{subscription_1.id}", params: subscription_1, as: :json
     parsed_response = JSON.parse(response.body, symbolize_names: true)
@@ -29,9 +29,9 @@ RSpec.describe 'subscriptions' do
     tea_1 = Tea.create!(title: "Chai", description: "Milky!", temperature: 100, brew_time: 4)
     tea_2 = Tea.create!(title: "Green Tea", description: "Smooth!", temperature: 80, brew_time: 2)
 
-    subscription_1 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_1.id}", title: "#{tea_1.title}", status: "active", frequency: "4", price: 4.5)
-    subscription_2 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_2.id}", title: "#{tea_1.title}", status: "active", frequency: "3", price: 2.5)
-    subscription_3 = Subscription.create!(tea_id: "#{tea_2.id}", customer_id: "#{customer_1.id}", title: "#{tea_2.title}", status: "inactive", frequency: "8", price: 5)
+    subscription_1 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_1.id}", title: "#{tea_1.title}", status: 1, frequency: "4", price: 4.5)
+    subscription_2 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_2.id}", title: "#{tea_1.title}", status: 1, frequency: "3", price: 2.5)
+    subscription_3 = Subscription.create!(tea_id: "#{tea_2.id}", customer_id: "#{customer_1.id}", title: "#{tea_2.title}", status: 0, frequency: "8", price: 5)
 
     get "/api/v1/customers/#{customer_1.id}/subscriptions"
     parsed_response = JSON.parse(response.body, symbolize_names: true)
@@ -54,7 +54,6 @@ RSpec.describe 'subscriptions' do
       customer_1 = Customer.create!(first_name: "Karan", last_name: "Mehta", email: "mehtak@gmail.com", address: "2234 South Jefferson")
       tea_1 = Tea.create!(title: "Chai", description: "Milky!", temperature: 100, brew_time: 4)
       subscription_1 = Subscription.create!(tea_id: "#{tea_1.id}", customer_id: "#{customer_1.id}", title: "#{tea_1.title}", status: "active", frequency: "4", price: 4.5)
-      
       post "/api/v1/customers/#{customer_1.id}/subscriptions/", params: { title: 'test', price: 5, status: "active", frequency: 2, customer_id: customer_1.id, tea_id: tea_1.id }
       patch "/api/v1/customers/#{customer_1.id}/subscriptions/58772266333", params: subscription_1, as: :json
       

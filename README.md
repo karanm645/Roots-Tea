@@ -63,11 +63,11 @@ API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers)
 All endpoints can be viewed by running the `rails server` command in your terminal. In your browswer, type in `http://localhost:3000/{endpoint_get_request}`
 
 ### Overview
-| Request Type  | URI           |  
-| ------------- | ------------- |
-| GET  |  /api/v1/customers/:id/subscriptions  |
-| POST | /api/v1/customers/:id/subscriptions |
-| PATCH | /api/v1/customers/:id/subscriptions/:id | 
+| Request Type  | URI          |  Details |
+| ------------- | -------------   --------        
+| GET  |  /api/v1/customers/:id/subscriptions     | All of the customer's subscriptions can be seen |
+| POST | /api/v1/customers/:id/subscriptions      | A new subscription can be created               |
+| PATCH | /api/v1/customers/:id/subscriptions/:id | A subscription can be cancelled                 |
 
 Request: 
 ```ruby 
